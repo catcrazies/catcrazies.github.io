@@ -3,22 +3,240 @@
   body {
    background: #000000;
    color: #ffffff;
+   font-family: "Space Grotesk", "Space Mono", "Spectral", "Spectral SC", "Asap Sharp";
   }
   sore {
-   font-size: 12px;
+   font-size: 14px;
    font-weight: bold;
    font-family: sans-serif;
   }
+  a {
+   color: #ffffff;
+  }
+  a:hover {
+   color: #44fad5;
+  }
+  artfight {
+   color: #44fae6;
+  }
+  youarehere {
+   color: #6efa48;
+  }
+  ao3 {
+   color: #ba454a;
+  }
+  discord {
+   color: #7185fc;
+  }
+  sap {
+   color: #d8b650;
+  }
+  sap a:hover {
+   color: #f9ea20;
+  }
+  p.header {
+   font-size: 25px;
+   margin-top: 10px;
+   margin-bottom: 5px;
+  }
+  p.subheader {
+   font-size: 12px;
+   margin-top: 0px;
+   margin-bottom: 15px;
+  }
+  main {
+   width: 50%;
+   display: inline-block;
+  }
+  box-row {
+   display: flex;
+   height: auto;
+  }
+  tabling {
+   display: block;
+   min-width: 200px;
+   height: 800px;
+  }
+  sidebar {
+   display: block;
+   float: right;
+  }
+  .tablet {
+   display: none;
+   width: 300px;
+   float: right;
+   background: #222222;
+   border: 1px solid #ffffff;
+   padding-left: 10px;
+   padding-right: 10px;
+   margin: 10px;
+  }
+  .tablet p {
+   margin-bottom: 10px;
+  }
+  body:has(dropper#kindling:hover) .tablet.kindling {
+   display: block;
+  }
+  body:has(dropper#midnight:hover) .tablet.midnight {
+   display: block;
+  }
+  body:has(dropper#artfight:hover) .tablet.artfight {
+   display: block;
+  }
+  body:has(dropper#archiveofourown:hover) .tablet.archiveofourown {
+   display: block;
+  }
+  body:has(dropper#tumblrblog:hover) .tablet.tumblrblog {
+   display: block;
+  }
+  dropper:hover {
+   color: #a0ffe3;
+  }
+  .tablet.archiveofourown {
+   padding: 0px!important;
+   border: none!important;
+   min-width: 400px;
+  }
+  ao3fake {
+   background-color: #222;
+   color: #d9d9d9;
+   margin: 0;
+   font: 1.25em Helvetica, sans-serif
+  }
+  ao3fake header {
+   background-color: #1e1c1c;
+   color: #5998d6;
+   padding: .5rem;
+   font-family: Georgia, "Spectral", sans-serif
+  }
+  ao3fake maain {
+   margin: auto;
+   margin-top: 15px;
+   max-width: 600px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+  }
+  ao3fake h2 {
+   opacity: 87%;
+   color: #d9d9d9;
+   margin: 0;
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 15px;
+  }
+  ao3fake p {
+   opacity: 87%;
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-bottom: 15px;
+  }
+  fakea a {
+   color: #dc8100!important;
+   text-decoration: none!important;
+  }
+  fakea a:hover {
+   color: #333!important;
+  }
+  .tablet.tumblrblog {
+   text-align: center;
+   background: #1c0005;
+  }
+  p.tumblr {
+   color: rgba(217, 182, 76, 0.7);
+  }
+  overlay {
+   mask-image: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.6));
+   background: #1c0005;
+  }
+  
  </style>
  <head>
   <title>oh i didnt know you could put things up here!!!</title>
    <!-- hi i didnt know how to set a title or what a title was until like today, right now -->
+    <!-- BUT APPARENTLY SOME OTHER ME DID BECAUSE MY PAGE HAD A TITLE ALREADY. what -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- hii w3schools i dont fully understand that but i trust you guys. thanks -->
+  <!-- foonts.. -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Asap+Sharp:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
  </head>
  <body>
-  <p>DISCORD:<br>chondrodite.kindling<br>catcrazies_4536</p>
-  <p>ARCHIVEOFOUROWN:<br>Catcrazies_Midnight</p>
-  <p>GITHUB:<br>catcrazies <sore>&lt;you are here!&gt;</sore></p>
+  <main>
+   <box-row>
+    <tabling>
+     <p><discord>DISCORD:</discord><br>
+      <dropper id="kindling">chondrodite.kindling</dropper><br>
+      <dropper id="midnight">catcrazies_4536</dropper>
+     </p>
+     <p><ao3>ARCHIVEOFOUROWN</ao3>:<br>
+        <a href="https://archiveofourown.org/users/Catcrazies_Midnight/pseuds/Catcrazies_Midnight/"><dropper id="archiveofourown">Catcrazies_Midnight</dropper></a></p>
+     <p><youarehere>GITHUB:</youarehere><br>
+        <a href="https://catcrazies.github.io">catcrazies</a> <sore>&lt;you are here!&gt;</sore></p>
+     <p><artfight>ARTFIGHT:</artfight><br>
+        <a href="https://artfight.net/~catcrazies"><dropper id="artfight">catcrazies</dropper></a></p>
+    </tabling>
+    <tabling>
+     <p><sap>Inactive:<br>
+        <sore style="font-size:15px; color:#ffffff;"><a href="https://catcrazies-midnight.tumblr.com"><dropper id="tumblrblog">catcrazies-midnight.tumblr.com</dropper></a> (outdated)</sore><br>
+        <a href="www.youtube.com/@catcraziesmidnight">youtube@catcraziesmidnight</a></sap><br>
+        catcrazies_4536</p>
+    </tabling>
+   </box-row>
+  </main>
+  
+  <sidebar>
+   <div class="tablet kindling">
+    <p class="header">+ °   .  𝄽</p>
+    <p class="subheader">chondrodite.kindling • any pronouns</p>
+    <p>main is catcrazies_4536<br>
+       pfp by me!!! my girl..<br>
+       <br>
+       cat on xir fancy puter ::]</p>
+   </div>
+   <div class="tablet midnight">
+    <p class="header">Catcrazies</p>
+    <p class="subheader">catcrazies_4536 • any pronouns</p>
+    <p>chondrodite.kindling is my alt 👍 <br>
+       (pfp is always by me unless otherwise indicated (or i forget))<br>
+       <br>
+       im just a little guy ::P<br>
+       (please dont use/repost my art without permission !)
+    </p>
+   </div>
+   <div class="tablet artfight">
+    <p class="header">catcrazies</p>
+    <p class="lister"><b>Joined:</b> 6 June 2024 08:08:51 PM</p>
+    <p class="lister"><b>Team:</b> <sore style="font-weight:normal;font-size: 16px;color: #e66c5a;">off-season</sore></p>
+    <p>AAAAAAAAAAAAAAAAAAAAAAAAAAA???<br>
+       <br>
+       i am gender man<br>
+       <br>
+       <br>
+       hey play outer wilds blind ok? ::]<br>
+       that game is a one time experience and from experience of someone who spoilered himself it is NOT WORTH IT. just as a heads up some of my characters (aphanite, lamina, chondrodite) are outer wilds spoilers so LOOKOUT
+    </p>
+   </div>
+   <div class="tablet archiveofourown">
+    <ao3fake>
+     <header>Archive Of Our Own</header>
+     <maain>
+      <h2>The archive is down for maintenance.</h2>
+      <p>
+       Check our 
+       <fakea><a href="https://www.otwstatus.org">status page</a></fakea>, <fakea><a href="https://bsky.app/profile/status.archiveofourown.org">@status.archiveofourown.org</a></fakea> on Bluesky or <fakea><a href="https://ao3org.tumblr.com">ao3org</a></fakea> on Tumblr for updates.
+      </p>
+     </maain>
+    </ao3fake>
+   </div>
+   <div class="tablet tumblrblog">
+    <p class="header"><sore style="font-size:inherit;">indefinite hiatus</sore></p>
+    <p><span style="color:rgba(247, 242, 206, 1.0);">on indefinite/permanent hiatus; description is dated and may not accurately reflect any current information</span></p>
+    <p class="tumblr" style="color:rgba(247, 232, 126, 0.7);font-family:"Space Mono";">! please dont use/repost my art without permission !</p>
+    <overlay>
+     <p class="tumblr" style="font-size: 15px; font-family:monospace;">OUTER WILDS SPOILERS IN LIKES !!!!! </p>
+    </overlay>
+   </div>
+  </sidebar>
  </body>
 </html>
